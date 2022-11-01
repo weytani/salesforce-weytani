@@ -22,3 +22,8 @@ main {
 .detail {
   max-width: 50%;
 }
+
+h3 {
+  font-size: larger;
+  margin-top: 0.5rem;
+}
