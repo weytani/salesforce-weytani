@@ -16,14 +16,22 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .detail {
-  max-width: 50%;
+  padding: 0.125rem;
+  font-family: var(--dxp-g-root-font-family);
 }
 
 h3 {
   font-size: larger;
   margin-top: 0.5rem;
+  font-family: var(--dxp-g-heading-font-family);
+}
+
+@media (min-witdh: 768px) {
+}
+
+@media (min-width: 1024px) {
 }
