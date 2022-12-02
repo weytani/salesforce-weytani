@@ -24,6 +24,15 @@ main {
   font-family: var(--dxp-g-root-font-family);
 }
 
+h1 {
+  font-family: var(--dxp-g-heading-font-family);
+}
+
+header {
+  font-family: var(--dxp-g-heading-font-family);
+  font-size: x-large;
+}
+
 h3 {
   font-size: larger;
   margin-top: 0.5rem;
