@@ -31,10 +31,12 @@ h1 {
 header {
   font-family: var(--dxp-g-heading-font-family);
   font-size: x-large;
+  font-weight: bold;
 }
 
 h3 {
   font-size: larger;
+  font-weight: bold;
   margin-top: 0.5rem;
   font-family: var(--dxp-g-heading-font-family);
 }
@@ -43,4 +45,7 @@ h3 {
 }
 
 @media (min-width: 1024px) {
+  .content-holder {
+    max-width: 75%;
+  }
 }
