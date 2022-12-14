@@ -1,0 +1,51 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.animated-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.detail {
+  padding: 0.125rem;
+  font-family: var(--dxp-g-root-font-family);
+}
+
+h1 {
+  font-family: var(--dxp-g-heading-font-family);
+}
+
+header {
+  font-family: var(--dxp-g-heading-font-family);
+  font-size: x-large;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: larger;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  font-family: var(--dxp-g-heading-font-family);
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+  .content-holder {
+    max-width: 80%;
+  }
+}
