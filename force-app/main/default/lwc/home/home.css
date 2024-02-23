@@ -1,51 +1,51 @@
-main {
+header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  background-color: #f4f4f4;
+  padding: 10px 20px;
 }
 
-.content-holder {
+.header-left {
+  /* Adjust as needed */
+}
+
+.header-icon {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+}
+
+.header-right {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  justify-content: space-between;
+  width: 300px; /* Adjust based on total width of links */
 }
 
-.animated-details {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.detail {
-  padding: 0.125rem;
-  font-family: var(--dxp-g-root-font-family);
-}
-
-h1 {
-  font-family: var(--dxp-g-heading-font-family);
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  /* Additional styling as needed */
 }
 
 header {
-  font-family: var(--dxp-g-heading-font-family);
-  font-size: x-large;
-  font-weight: bold;
+  position: fixed;
+  top: -100px; /* Hide the header off-screen */
+  width: 100%;
+  background-color: #333;
+  color: white;
+  transition: top 0.3s;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-h3 {
-  font-size: larger;
-  font-weight: bold;
-  margin-top: 0.5rem;
-  font-family: var(--dxp-g-heading-font-family);
+header.scrolled {
+  top: 0; /* Show the header */
 }
 
-@media (min-width: 768px) {
-}
-
-@media (min-width: 1024px) {
-  .content-holder {
-    max-width: 80%;
-  }
+.content {
+  width: 1auto;
+  margin-top: 60px; /* Add margin to account for the fixed header */
+  /* Your content styles here */
+  background-color: aqua;
 }
