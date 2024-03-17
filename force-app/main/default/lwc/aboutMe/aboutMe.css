@@ -41,6 +41,11 @@ h3 {
   font-family: var(--dxp-g-heading-font-family);
 }
 
+a {
+  color: var(--dxp-g-link-color);
+  text-decoration: none;
+}
+
 @media (min-width: 768px) {
 }
 
