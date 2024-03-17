@@ -1,51 +1,35 @@
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f4f4f4;
-  padding: 10px 20px;
+html {
+  background-color: #001;
 }
 
-.header-left {
-  /* Adjust as needed */
+h1 {
+  color: #eef;
+  display: inline-block;
+  font-size: 5vw;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.header-icon {
-  width: 50px; /* Adjust size as needed */
-  height: auto;
+.aliens > * {
+  animation: turn 10s ease-in;
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: normal;
+  letter-spacing: 3vw;
+  text-shadow: 0 0 0.5rem #def;
+  text-transform: uppercase;
+  transform: scaleY(4);
 }
 
-.header-right {
-  display: flex;
-  justify-content: space-between;
-  width: 300px; /* Adjust based on total width of links */
-}
-
-.nav-link {
-  text-decoration: none;
-  color: #333;
-  font-size: 16px;
-  /* Additional styling as needed */
-}
-
-header {
-  position: fixed;
-  top: -100px; /* Hide the header off-screen */
-  width: 100%;
-  background-color: #333;
-  color: white;
-  transition: top 0.3s;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-header.scrolled {
-  top: 0; /* Show the header */
-}
-
-.content {
-  width: 1auto;
-  margin-top: 60px; /* Add margin to account for the fixed header */
-  /* Your content styles here */
-  background-color: aqua;
+@keyframes turn {
+  0% {
+    text-shadow: 0 0 0 #def;
+    transform: scaleY(4) rotateY(90deg);
+  }
+  100% {
+    text-shadow: 0 0 0.5rem #def;
+    transform: scaleY(4) rotateY(0);
+  }
 }
