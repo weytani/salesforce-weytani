@@ -2,14 +2,26 @@ html {
   background-color: #001;
 }
 
+.container {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+}
+
 h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #eef;
-  display: inline-block;
   font-size: 5vw;
+  transform: translate(-50%, -50%);
+  top: 50%;
   left: 50%;
   position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .aliens > * {
