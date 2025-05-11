@@ -1,0 +1,47 @@
+html {
+  background-color: #001;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eef;
+  font-size: 5vw;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+}
+
+.aliens > * {
+  animation: turn 10s ease-in;
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: normal;
+  letter-spacing: 3vw;
+  text-shadow: 0 0 0.5rem #def;
+  text-transform: uppercase;
+  transform: scaleY(4);
+}
+
+@keyframes turn {
+  0% {
+    text-shadow: 0 0 0 #def;
+    transform: scaleY(4) rotateY(90deg);
+  }
+  100% {
+    text-shadow: 0 0 0.5rem #def;
+    transform: scaleY(4) rotateY(0);
+  }
+}
